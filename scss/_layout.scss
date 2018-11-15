@@ -1,0 +1,39 @@
+.site {
+    padding: var(--spacing-site, 2em);
+}
+
+.site-content {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+body.login {
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 0;
+    display: flex;
+}
+
+body.login .site{
+    flex: 1 0 auto;
+    background: rgba(coral, 0.2);
+    border: 4rem solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+body.login .site-header {
+    display: none;
+}
+
+.flying{
+    width:31px;
+    height: auto;
+    position: absolute;
+    top:5rem; left:1.1rem;
+    z-index: 15;
+    animation: fly 20s ease-in-out 1 forwards;
+}
+
+

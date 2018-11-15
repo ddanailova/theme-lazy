@@ -1,0 +1,73 @@
+form {
+    color: #333;
+    animation: shake 0.5s 1 ease-in-out forwards;
+}
+
+fieldset,
+fieldset legend {
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    background: #fff;
+    box-shadow: 0 0 2rem 0 rgba(black, 0.2);
+}
+
+fieldset {
+    padding: 3.5vh 4.5vw 3vh 4.5vw;
+}
+
+fieldset legend {
+    display: inline-block;
+    padding: 0.6em 1.5em;
+    font-weight: bold;
+    border-radius: 1.5em;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+input[type="text"],
+input[type="password"] {
+    width: 20rem;
+    display: block;
+    border: 2px solid #ccc;
+    background: rgba(coral, 0.2);
+    padding: 0.4em 1em;
+    border-radius: 1.5em;
+    transition: background 0.3s ease, border-color 0.3s ease;
+    ;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    background: #fff;
+    outline: none;
+    border-color: #333;
+}
+
+input[type="submit"] {
+    font-weight: bold;
+    display: block;
+    border:none;
+    background: #333;
+    color: #fff;
+    padding: 0.6em 1.5em;
+    border-radius: 1.5em;
+    box-shadow: 0 0 1rem 0 rgba(black, 0.5);
+    // box-shadow: 0 0 0.5rem 0.1rem rgba(white, 0.6) inset;
+}
+
+input[type="submit"]:focus, 
+input[type="submit"]:hover  {
+    outline: none;
+    background: coral;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+input[type="submit"]:focus{
+    box-shadow: 0 0 0.5rem 0.1rem rgba(black, 0.6);
+}
