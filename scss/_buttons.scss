@@ -1,0 +1,40 @@
+$btn-colors:(
+    'light-blue':#74b9ff,
+    'blue':#0984e3,
+    'coral':#ff7f50,
+    'dark-pink':#da2619,
+);
+
+@function btn-text-color($bg-color){
+    @if(lightness($bg-color)>50){
+        @return #000; // Lighter background. return dark color
+    }@else{
+        @return #fff; // Darker background. return light color
+    }
+}
+.button{
+    display: inline-block;
+    width: 9rem;
+    padding: 1rem;
+    border-radius: 2em;
+    font-weight: bold;
+    background: #666;
+    text-decoration:none;
+    text-align: center;
+    color:#fff;
+    border:2px solid white;
+    box-shadow: 0 0 1.5rem 0 rgba(black, 0.5);
+    margin: 0 1rem;
+}
+
+@each $name, $color in $btn-colors{
+    .button.#{$name}{
+        background:$color;
+        color:btn-text-color($color);
+
+        &:hover{
+            background: lighten($color, 10);
+            color:btn-text-color(lighten($color, 10));
+        }
+    }
+}

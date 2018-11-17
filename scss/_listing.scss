@@ -4,59 +4,59 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-}
 
-.listing li {
-    display: block;
-    list-style: none outside;
-    flex: 0 0 31%;
-}
+    li {
+        display: block;
+        list-style: none outside;
+        flex: 0 0 31%;
+    }
 
-.listing a {
-    display: block;
-    background: #fff;
-    border-radius: 0.3rem;
-    color: #333;
-    text-decoration: none;
-    padding: 1rem 1.5rem;
-    position: relative;
-    transition: background 0.3s ease-in, color 0.3s ease-in;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
-}
+    a {
+        display: block;
+        background: #fff;
+        border-radius: 0.3rem;
+        color: #333;
+        text-decoration: none;
+        padding: 1rem 1.5rem;
+        position: relative;
+        transition: background 0.3s ease-in, color 0.3s ease-in;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
 
-.listing a:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    border-radius: 0.3rem;
-    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
-}
+        &:before {
+            display: block;
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 0.3rem;
+            box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            transition: opacity 0.3s ease-in;
+        }
+    
+        &:hover {
+            background: coral;
+            color: #fff;
 
-.listing a:hover {
-    background: coral;
-    color: #fff;
-    // box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.1);
-}
-
-.listing a:hover::before{
-    opacity: 1;
-}
-.listing a span {
-    display: block;
-}
-
-.listing a .title {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-bottom: 5rem;
-}
-
-.listing a .date {
-    border-top: 1px solid #ddd;
+            &::before {
+                opacity: 1;
+            }
+        }
+      
+        & span {
+            display: block;
+        }
+    
+        & .title {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 5rem;
+        }
+    
+        & .date {
+            border-top: 1px solid #ddd;
+        }
+    }
 }
